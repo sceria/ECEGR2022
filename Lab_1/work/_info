@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/MentorGraphics/modeltech64_2021.2/examples
+T_opt
+!s110 1649117657
+V5kezHf92eLbPf7DLP`D7h0
+04 9 4 work testintro only 1
+=1-d8bbc17f2dbd-624b89d8-2b6-220c
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eintro
+Z0 w1649117594
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+Z6 dC:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1
+Z7 8C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/introvhdl.vhd
+Z8 FC:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/introvhdl.vhd
+l0
+L7 1
+VIB@lQ<C;[0i]9U<85zPZC3
+!s100 K7YioH;C?[]ETY[FCOFY;2
+Z9 OL;C;2021.2;73
+32
+Z10 !s110 1649117599
+!i10b 1
+Z11 !s108 1649117599.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/introvhdl.vhd|
+Z13 !s107 C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/introvhdl.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+R4
+R5
+DEx4 work 5 intro 0 22 IB@lQ<C;[0i]9U<85zPZC3
+!i122 5
+l14
+L13 4
+VI_;m0?Z1]EOS0X3?`LLd:0
+!s100 `nZJXlTQBJz0SNJR`;zbD3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Etestintro
+Z16 w1648684278
+R1
+R2
+R3
+R4
+R5
+!i122 6
+R6
+Z17 8C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/tintro.vhd
+Z18 FC:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/tintro.vhd
+l0
+L7 1
+VB;g?2S4VTRFASLL^bOeNV3
+!s100 F29C<E@94z;;dEKZFEm2C3
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/tintro.vhd|
+Z20 !s107 C:/Users/sceria/OneDrive - Seattle University/ECEGR2210_WQ22/OneDrive - Seattle University/Desktop/MicroProcessor Design/ECEGR2022-main/Lab_1/tintro.vhd|
+!i113 0
+R14
+R15
+Aonly
+R1
+R2
+R3
+R4
+R5
+DEx4 work 9 testintro 0 22 B;g?2S4VTRFASLL^bOeNV3
+!i122 6
+l32
+L12 122
+V39<;UI[C:B@2HnI2>9ci81
+!s100 aN<;SGcJT?C1JVz7>Bj9j1
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
