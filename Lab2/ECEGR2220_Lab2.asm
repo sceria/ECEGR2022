@@ -12,7 +12,7 @@ addi t1, zero, 10  # t1 holds integer B
 addi t2, zero, 5 # t2 holds integer C
 addi t3, zero, 2 # t3 holds integer D
 addi t4, zero, 18 # t4 holds integer E
-addi t5, zero, 3 # t5 holds integer F
+addi t5, zero, -3 # t5 holds integer F
 
 sub t4, t4, t5 # t4 rewrites old value and now holds E-F
 div t5, t0, t2 # t5 rewrites old value and now holds A/C
