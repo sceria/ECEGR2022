@@ -49,14 +49,85 @@ BEGIN
 		-- Wait 100 ns for global reset to finish
 		wait for 100 ns;
 
-		-- Start testing the ALU
+--SHIFTS AND SUBTRACTOR ARE QUESTIONABLE
+
+		-- Non-immediates
 		datain_a <= X"01234567";	-- DataIn in hex
 		datain_b <= X"11223344";
-		control  <= "00000";		-- Control in binary (ADD and ADDI test)
-		wait for 20 ns; 			-- result = 0x124578AB  and zeroOut = 0
+		control  <= "00000";		-- Control in binary (ADD test)
+		wait for 40 ns; 			-- result = 0x124578AB  and zeroOut = 0
 
-		-- Add test cases here to drive the ALU implementation
+		control  <= "01000";		-- AND
+		wait for 40 ns; 			-- result = 0x1220144 and zeroOut = 0	
 
+		control  <= "01010";		-- OR
+		wait for 40 ns; 			-- result = 0x11237767 and zeroOut = 0	
+	
+		control  <= "00001";		-- SUB 
+		wait for 40 ns; 			-- result = 0xF0011223 and zeroOut = 0	
+		
+		control  <= "10001";		-- SHIFT LEFT 1 
+		wait for 40 ns; 			-- result = 0x02468ACE and zeroOut = 0
+
+		control  <= "10010";		-- SHIFT LEFT 2 
+		wait for 40 ns; 			-- result = 0x048D159C and zeroOut = 0
+
+		control  <= "10011";		-- SHIFT LEFT 3 
+		wait for 40 ns; 			-- result = 0x091A2B38 and zeroOut = 0
+
+		control  <= "10101";		-- SHIFT RIGHT 1 
+		wait for 40 ns; 			-- result = 0x0091A2B3 and zeroOut = 0
+
+		control  <= "10110";		-- SHIFT RIGHT 2
+		wait for 40 ns; 			-- result = 0x0048D159 and zeroOut = 0
+
+		control  <= "10111";		-- SHIFT RIGHT 3 
+		wait for 40 ns; 			-- result = 0x002468AC and zeroOut = 0
+
+		control  <= "01111";		-- DataIn2 passing through 
+		wait for 40 ns; 			-- result = 0x11223344 and zeroOut = 0
+		
+
+---------------IMMEDIATES-------------------------------------------------------
+		datain_a <= X"01234567";	-- DataIn in hex
+		datain_b <= X"00000001";	-- Immediate = 1
+		control  <= "00000";		-- Control in binary (ADDI test)
+		wait for 40 ns; 			-- result = 0x124578AB  and zeroOut = 0
+
+		control  <= "01000";		-- ANDi
+		wait for 40 ns; 			-- result = 0x1220144 and zeroOut = 0	
+
+		control  <= "01010";		-- ORi
+		wait for 40 ns; 			-- result = 0x11237767 and zeroOut = 0	
+	
+		control  <= "00001";		-- SUBi 
+		wait for 40 ns; 			-- result = 0xF0011223 and zeroOut = 0	
+		
+		control  <= "10001";		-- SHIFT LEFT 1 
+		wait for 40 ns; 			-- result = 0x02468ACE and zeroOut = 0
+
+		control  <= "10010";		-- SHIFT LEFT 2 
+		wait for 40 ns; 			-- result = 0x048D159C and zeroOut = 0
+
+		control  <= "10011";		-- SHIFT LEFT 3 
+		wait for 40 ns; 			-- result = 0x091A2B38 and zeroOut = 0
+
+		control  <= "10101";		-- SHIFT RIGHT 1 
+		wait for 40 ns; 			-- result = 0x0091A2B3 and zeroOut = 0
+
+		control  <= "10110";		-- SHIFT RIGHT 2
+		wait for 40 ns; 			-- result = 0x0048D159 and zeroOut = 0
+
+		control  <= "10111";		-- SHIFT RIGHT 3 
+		wait for 40 ns; 			-- result = 0x002468AC and zeroOut = 0
+
+		control  <= "01111";		-- DataIn2 passing through 
+		wait for 40 ns; 			-- result = 0x11223344 and zeroOut = 0
+
+	-- Testing the zero output
+		datain_b <= X"00000000";		-- result = 0 and zeroOut = 1
+		control <= "01111";
+		wait for 40 ns; 
 
 		wait; -- will wait forever
 	END PROCESS;
